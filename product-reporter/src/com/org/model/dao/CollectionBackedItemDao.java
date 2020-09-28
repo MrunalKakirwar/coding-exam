@@ -73,6 +73,7 @@ public class CollectionBackedItemDao implements ItemDao {
 		}
 		return items;
 	}
+	// fetches all the items of a particular item type from the dummy list
 	private List<Item> fetchParticularItem(List<Item> items, ItemType itemType) {
 		
 		// lists to get different type of items

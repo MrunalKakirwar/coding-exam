@@ -18,6 +18,7 @@ public class ViewController {
 		ItemService service = (ItemService)ItemFactory.getInstance(LayerType.SERVICE);
 		String option = null;
 		do {
+			// ItemType.values() displays all the constants without using for loop
 			System.out.println("Fetch Reports of: "+Arrays.toString(ItemType.values()));
 			System.out.print("Enter any one of the above item or ");
 			System.out.println("Enter 2 to exit");

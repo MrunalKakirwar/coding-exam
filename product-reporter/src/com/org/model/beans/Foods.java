@@ -1,10 +1,13 @@
 package com.org.model.beans;
 
+
 public class Foods extends Item {
 	public enum Vegetarian {
 		YES, NO
 	}
 	private Vegetarian vegetarian;
+	
+
 	
 	public Foods(int code, String name, int quantity, Vegetarian vegetarian) {
 		super(code, name, quantity);

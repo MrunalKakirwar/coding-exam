@@ -27,7 +27,7 @@ public class ItemServiceImpl implements ItemService {
 		List<Item> items = null;
 		try {
 			items = dao.generateReports(itemType);
-			// using anonymous class to sort item of particular category
+			// using anonymous class to the sort particular type instead of creating separate class
 			Collections.sort(items, new Comparator<Item>() {
 				@Override
 				public int compare(Item o1, Item o2) {
